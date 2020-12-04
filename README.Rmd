@@ -15,10 +15,10 @@ knitr::opts_chunk$set(
 
 # rngex
 
-<!-- badges: start -->
-<!-- badges: end -->
-
 The goal of rngex is to show example random number generation with RcppArmadillo.
+
+You just call the function `ranmat` with an integer (`n`) and it will return 
+a random `n` x `n` matrix. The random values are generated using `RcppArmadillo`.
 
 ## Example
 
