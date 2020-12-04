@@ -7,7 +7,7 @@
 using namespace Rcpp;
 
 // ranmat
-arma::mat ranmat(Rcpp::NumericVector n);
+Rcpp::List ranmat(Rcpp::NumericVector n);
 RcppExport SEXP _rngex_ranmat(SEXP nSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;

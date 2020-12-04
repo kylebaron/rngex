@@ -16,8 +16,12 @@
 //
 
 // [[Rcpp::export]]
-arma::mat ranmat(Rcpp::NumericVector n) {
-    arma::mat X = arma::randn<arma::mat>(n[0],n[0]);
-    return(X);
+Rcpp::List ranmat(Rcpp::NumericVector n) {
+    arma::mat X1 = arma::randn<arma::mat>(n[0],n[0]);
+    arma::mat X2 = arma::randn<arma::mat>(n[0],n[0]);
+    Rcpp::List ans;
+    ans["x1"] = X1;
+    ans["x2"] = X2;
+    return(ans);
 }
 
